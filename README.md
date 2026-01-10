@@ -2,10 +2,10 @@
 
 This is a repo of purely small projects that are just for my learning. This repo will include nothing produced by generative AI, and is here purely as documentation.
 
-# What I am currently working on!:
+## What I am currently working on
 
--
+* [React JS 19 Full Course 2025](./React-JS-19-Full-Course/)
 
-# List of completed mini-projects
+## List of completed mini-projects
 
--
+* 
