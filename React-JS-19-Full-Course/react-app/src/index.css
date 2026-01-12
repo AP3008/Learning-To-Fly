@@ -24,3 +24,21 @@ h2 {
   margin-bottom: 20px;
   font-size: 36px;
 }
+
+.card{
+  border: 1px solid #4b5362;
+  padding: 20px;
+  margin: 10px; 
+  background-color: #31363f;
+  border-radius: 10px;
+  min-height: 100px; 
+}
+
+button{
+  border: none;
+  font-size: 30px;
+  background-color: transparent;
+  width: 100%;
+  text-align: right;
+  cursor:pointer;
+}

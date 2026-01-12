@@ -4,24 +4,27 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 const Test = ({ title }) => {
+  const [hasLiked, setHasLiked] = useState(flase);
+
   return (
-    <div>
-      <p>{title}</p>
+    <div className="card">
+      <h2>{title}</h2>
+
+      <button onClick={() => setHasLiked(!hasLiked)}>
+        {hasLiked ? 'Liked':'Like'}
+      </button>
+
     </div>
   )
 }
 const App = () => {
   return (
-    <div>
-    <h2>Arrow Component</h2>
-      <div className="container">
-        <Test title="This"/>
-        <Test title="is"/>
-        <Test title="a"/>
-        <Test title="Test!"/> 
-      </div>
-
-    </div>
+        <div className="container">
+          <Test title="This"/>
+          <Test title="is"/>
+          <Test title="a"/>
+          <Test title="Test!"/> 
+        </div>
   )
 }
 
