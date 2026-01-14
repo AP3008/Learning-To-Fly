@@ -1,13 +1,16 @@
-import React from 'react'
-
-const App = () => {
-  return (
-    <div>
-      <h1 className="text-3xl font-bold underline">
-        Hello World
-      </h1>
-    </div>
-  )
-}
-
-export default App
+import React from 'react' 
+ 
+const App = () => { 
+  return ( 
+    <main> 
+      <div className="pattern"/>
+        <div className="weapper">
+          <header>
+            <h1>Find <span className="text-gradient">Movies</span> You'll Enjoy Without the Hassle</h1>
+          </header>
+      </div>
+    </main> 
+  ) 
+} 
+ 
+export default App 
