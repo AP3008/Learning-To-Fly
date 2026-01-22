@@ -4,7 +4,7 @@
 
 Edit the script to add/remove your own links needed to open.
 Then put the script into a directory
-'''
+'''/bash
 cd your-directory
 chmod +x general-leetcode-open.sh
 '''
