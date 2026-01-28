@@ -7,6 +7,8 @@ This is a repo of purely small projects that are just for my learning. This repo
 * [React JS 19 Full Course 2025](./React-JS-19-Full-Course/) | [Video](https://www.youtube.com/watch?v=dCLhUialKPQ&list=PL8IUzGAH46wnA8vi_zgZCxLyxE_ezclB8&index=5)
 * [Django Blog Page](./Django-Blog/) | [Guide](https://tutorial.djangogirls.org/en/)
 * [Detecting Fake News With Python](./detecting-fake-news/) | [Guide](https://data-flair.training/blogs/advanced-python-project-detecting-fake-news/)
+* [Basic AI Agent](./ai-agent-tutorial) | [Guide](https://www.youtube.com/watch?v=bTMPwUgLZf0)
+
 ## List of completed mini-projects
 
 * [macos leetcode/neetcode automation script](./macos-automation-script)
