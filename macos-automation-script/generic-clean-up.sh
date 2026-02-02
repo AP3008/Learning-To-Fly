@@ -1,0 +1,3 @@
+#!/bin/zsh
+mv 'PATH TO PLACE THAT NEEDS TO BE CLEANED'/*.png /'FOLDER OR TRASH'
+
