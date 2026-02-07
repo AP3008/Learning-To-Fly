@@ -1,2 +1,6 @@
 #env vars
 .env
+
+#Python things
+venv
+__pycache__
