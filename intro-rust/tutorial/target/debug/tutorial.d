@@ -1,0 +1,1 @@
+/Users/adamporbanderwalla/Desktop/Programming\ Projects/Learning\ To\ Fly/intro-rust/tutorial/target/debug/tutorial: /Users/adamporbanderwalla/Desktop/Programming\ Projects/Learning\ To\ Fly/intro-rust/tutorial/src/main.rs
