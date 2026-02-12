@@ -1,9 +1,11 @@
 *.exe
 hello_world
 types
-tutorial
+./tutorial/
+tutorial/
 constants
 data_types
 console_input
 type_casting
 conditions
+functions
