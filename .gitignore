@@ -6,3 +6,7 @@ venv/
 
 #Macos
 .DS_Store
+
+#General 
+.env
+.env.*
