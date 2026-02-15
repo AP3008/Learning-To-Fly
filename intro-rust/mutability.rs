@@ -10,4 +10,6 @@ fn main(){
     // Y cannot be mutable because it is constant
     println!("{}", PI);  
 }
+
+//Can be used globally
 const PI: f64 = 3.141592653;
