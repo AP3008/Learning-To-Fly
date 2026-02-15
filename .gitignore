@@ -1,0 +1,8 @@
+#For all rust projects 
+target/
+
+#Python projects
+venv/ 
+
+#Macos
+.DS_Store
