@@ -18,4 +18,13 @@ fn main (){
         Some(first:i32) => println!("The first element is {first}"),
         None => println!("that element doesn't exist"),
     }
+
+    // UTF-8
+    let s = "hello".to_string();
+    let s = String::from("Hello");
+    let mut s = String::from("foo");
+    //To grow the string we use push_str not push, because push just pushes a string slice and the
+    //result can't grow, but to add another string, we can use push_str
+    s.push_str("bar");
+
 }
