@@ -27,4 +27,15 @@ fn main (){
     //result can't grow, but to add another string, we can use push_str
     s.push_str("bar");
 
+    //HashMap<K, V>
+
+    let mut scores = HashMap::new();
+    scores.insert(String::from("Blue"), 10);
+    scores.insert(String::from("Yellow"), 50); 
+    let team_name: String = String::from("Blue");
+    let score = scores.get(&team_name).copied().unwrap_or(0); //Because get returns an option so we just want to
+                                                //ignore it because we know we will have our value
+    for (key: &String, value: &i32) in &scores{
+        println!("{key}, {vale}");
+    }
 }
