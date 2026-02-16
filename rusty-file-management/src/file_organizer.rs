@@ -22,7 +22,9 @@ pub fn items_in_dir(path: &Path) -> Result<Vec<PathBuf>, Error> {
                 continue;
             }
         };
-        file_list.push(file.path());
+        if file.path().is_file(){ 
+            file_list.push(file.path());
+        }
     }
     return Ok(file_list);
 }
