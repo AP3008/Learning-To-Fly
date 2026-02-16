@@ -82,3 +82,14 @@ pub fn organize(collection: Vec<PathBuf>, extension: &str, destination: &Path) -
         };
     }
 }
+
+pub fn organize_everything_else(collection: Vec<PathBuf>,destination: &Path) -> (){
+    for file in collection{
+        if file.is_file(){
+            match rename(&file, &destination.join(file.file_name().unwrap())){
+                Ok(_f) => { println!("{} moved to Truly Random", file.file_name().unwrap().to_str().unwrap()) },
+                Err(e) => { println!("Did not move: {e}") }
+            }
+        }
+    }
+}

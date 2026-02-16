@@ -1,7 +1,7 @@
 mod file_organizer;
 
 use std::path::{Path, PathBuf};
-use crate::file_organizer::{items_in_dir, group_files, organize};
+use crate::file_organizer::{items_in_dir, group_files, organize, organize_everything_else};
 
 fn main() {
     let area_to_clean: &Path = Path::new("/Users/adamporbanderwalla/Desktop"); 
@@ -23,4 +23,12 @@ fn main() {
         organize(group, ext, destination);
         organize(random_group, ext, destination); 
     }
+
+    // To deal with all the other truly random files...
+    
+    let remaining_files = match items_in_dir(destination){
+        Ok(dir) => dir,
+        Err(_e) => Vec::<PathBuf>::new()
+    };
+    organize_everything_else(remaining_files, &destination.join("Truly Random"));
 }
