@@ -1,7 +1,7 @@
 mod file_organizer;
 use std::{fs::create_dir, path::Path};
 
-use crate::file_organizer::{items_in_dir, organize_files};
+use crate::file_organizer::{items_in_dir, group_files};
 
 fn main() {
     let path_str: &str = "/Users/adamporbanderwalla/Desktop";
@@ -15,7 +15,7 @@ fn main() {
     };
 
     //println!("{:?}",res);
-    let png = organize_files(res, "png");
+    let png = group_files(res, "png");
     //println!("{:?}", png); 
 }
 

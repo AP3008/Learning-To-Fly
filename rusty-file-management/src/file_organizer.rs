@@ -1,3 +1,4 @@
+use std::collections;
 use std::io::Error;
 use std::fs::{DirEntry, ReadDir, create_dir, read_dir, rename};
 use std::path::{Path, PathBuf}; 
@@ -26,7 +27,7 @@ pub fn items_in_dir(path:&Path) -> Result<Vec<PathBuf>, Error>{
 }
 
 // Based of a list of paths we organize them into folders based of file extension
-pub fn organize_files(paths: Vec<PathBuf>, extension: &str) -> Vec<PathBuf>{ 
+pub fn group_files(paths: Vec<PathBuf>, extension: &str) -> Vec<PathBuf>{ 
     
     let mut grouped_list: Vec<PathBuf> = Vec::new(); 
     
@@ -56,10 +57,22 @@ fn get_extension(file_path: &Path)-> Option<&str>{
 //Function that creates a directory based on the extension name
 //Making this specific to me so I am creating the directories inside of Random Storage on my PC
 fn create_extension_dir(extension: &str, location: &Path) -> (){
-    match create_dir(location.join("Random Storage").join(extension.to_uppercase())){
+    match create_dir(location.join(extension.to_uppercase())){
         Ok(_d) => {println!("Created {extension} dir")},
         Err(e) => {println!("Error: {e}")}
     }
 }
 
-
+//Organizes files into respective folders
+fn organize(collection: Vec<PathBuf>,extension: &str, location: &Path) -> (){
+    //Check if a folder exists 
+    if !(location.exists()){
+        create_extension_dir(extension, &location); 
+    }
+   for file in collection{
+       match rename(&file, &location){
+        Ok(_f) => {println!("file moved!")},
+        Err(e) => {println!("Did not move: {e}")}
+       }; 
+   }
+}
