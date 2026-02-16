@@ -74,10 +74,10 @@ pub fn organize(collection: Vec<PathBuf>, extension: &str, destination: &Path) -
     for file in collection {
         match rename(&file, &destination.join(extension.to_uppercase()).join(file.file_name().unwrap())) {
             Ok(_f) => {
-                println!("file moved!")
+                println!("{} moved to {}", file.file_name().unwrap().to_str().unwrap(), extension.to_uppercase())
             }
             Err(e) => {
-                println!("Did not move: {e}")
+                println!("Unexpected Error: {e}")
             }
         };
     }
