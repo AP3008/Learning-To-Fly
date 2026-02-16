@@ -66,13 +66,13 @@ fn create_extension_dir(extension: &str, location: &Path) -> () {
 }
 
 //Organizes files into respective folders
-pub fn organize(collection: Vec<PathBuf>, extension: &str, location: &Path) -> () {
+pub fn organize(collection: Vec<PathBuf>, extension: &str, destination: &Path) -> () {
     //Check if a folder exists
-    if !(location.exists()) {
-        create_extension_dir(extension, &location);
+    if !(destination.join(extension.to_uppercase()).exists()) {
+        create_extension_dir(extension, &destination);
     }
     for file in collection {
-        match rename(&file, &location) {
+        match rename(&file, &destination.join(extension.to_uppercase()).join(file.file_name().unwrap())) {
             Ok(_f) => {
                 println!("file moved!")
             }
