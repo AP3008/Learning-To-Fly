@@ -1,10 +1,9 @@
-use std::collections;
-use std::fs::{DirEntry, ReadDir, create_dir, read_dir, rename};
+use std::fs::{create_dir, read_dir, rename};
 use std::io::Error;
 use std::path::{Path, PathBuf};
 
 // This function simply gets us a list of paths in a directory
-fn items_in_dir(path: &Path) -> Result<Vec<PathBuf>, Error> {
+pub fn items_in_dir(path: &Path) -> Result<Vec<PathBuf>, Error> {
     let iterator = match read_dir(path) {
         Ok(dir) => dir,
         Err(e) => {
@@ -29,7 +28,7 @@ fn items_in_dir(path: &Path) -> Result<Vec<PathBuf>, Error> {
 }
 
 // Based of a list of paths we organize them into folders based of file extension
-fn group_files(paths: Vec<PathBuf>, extension: &str) -> Vec<PathBuf> {
+pub fn group_files(paths: Vec<PathBuf>, extension: &str) -> Vec<PathBuf> {
     let mut grouped_list: Vec<PathBuf> = Vec::new();
 
     for path in paths {
@@ -67,7 +66,7 @@ fn create_extension_dir(extension: &str, location: &Path) -> () {
 }
 
 //Organizes files into respective folders
-fn organize(collection: Vec<PathBuf>, extension: &str, location: &Path) -> () {
+pub fn organize(collection: Vec<PathBuf>, extension: &str, location: &Path) -> () {
     //Check if a folder exists
     if !(location.exists()) {
         create_extension_dir(extension, &location);
