@@ -1,9 +1,7 @@
-use wallpaper;
 use std::process::Command;
-use rand::Rng; 
+use rand::random_range; 
 use std::path::{Path, PathBuf};
 use std::fs::read_dir;
-use core::time;
 use chrono::{Local, NaiveTime, Timelike}; 
 
 fn main() {
