@@ -16,3 +16,4 @@ This is a repo of purely small projects that are just for my learning. This repo
 * [Intro to Rust](./intro-rust) | [Guide](https://www.youtube.com/watch?v=T_KrYLW4jw8&list=PLzMcBGfZo4-nyLTlSRBvo0zjSnCnqjHYQ)
 * [Rusty File Management](./rusty-file-managment) | No Guide
 * [Rusty Wallpaper Service](./wallpaper-service) | No Guide
+* [Rust Chat Room](./chat-app) | [Guide](https://www.youtube.com/watch?v=NS9Dh63i_Q4)
