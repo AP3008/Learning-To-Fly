@@ -10,3 +10,6 @@ venv/
 #General 
 .env
 .env.*
+
+#VS Code
+.vscode
