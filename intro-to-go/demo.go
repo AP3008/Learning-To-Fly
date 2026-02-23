@@ -153,7 +153,9 @@ func main(){
 
 	sl1 := []string{"hello", "world"}
 	for ctr:=0;ctr<10;ctr++{
-		sl1 = append(sl1, "hola")
+		sl1 = append(sl1, "hola") //We don't have enough space to add the element to the slice, so we double the size of the underlying array, and append the new option. 
 		fmt.Println(sl1, len(sl1), cap(sl1))
 	}
+
+
 }
