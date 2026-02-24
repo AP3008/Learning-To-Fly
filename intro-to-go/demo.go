@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"errors"
 )
 
 func main(){
@@ -199,8 +200,8 @@ func main(){
 		"adam", 
 		20,
 		{
-			name : "basketball",
-			position: "D",
+			name : "basketball"
+			position: "D"
 		}
 	}
 	p2 := Person{
@@ -210,8 +211,37 @@ func main(){
 	fmt.Println(p1.sport.name)
 
 
+	var sha Shape = Triange{1,2,3}
+	fmt.Println(sha.getPerimeter())
+
+	var s_list []Shape = []Shape{Triangle{1,2,3}, Square{1,2}}
+
+	// Error handling
+
+	// To cause a panic you can call
+	
+	//panic("This caused a crash")
+
+	// Anything that occurs after a panic does not run including a defer
+
+	// defer: What ever you defer gets executed after everything else is done in execution block. It also runs even if a panic occurs. Example if you want to write to a file but the file is already open. You may want to defer an operation that closes the file even if a panic occurs. You want to put defers at the top incase a panic occurs early on.
+
+	// Recover 
+
+	//r := recover()
+	//recover: can only be used inside of a defered statements.
+
+	
 }
 
+// Because they all belong to the same interface we can implement generic methods easier amongst them. 
+func isEvenPerimeter(shape Shape) bool{
+	return shape.getPerimeter() & 2 == 0 
+}
+
+func (t Triangle) getSides() uint {
+	return []uint{t.a,t.b, t.c}
+}
 // Srtucts 
 
 type Person struct {
@@ -219,6 +249,12 @@ type Person struct {
 	age uint 
 	sport Sport //Creates a slice of a struct 
 }
+
+type Square struct{
+	a uint
+	b uint
+}
+
 
 func test(arr []string){
 	arr[0] = "change this"
@@ -285,4 +321,33 @@ func (p Person) setName(newName string){
 type Sport struct{
 	name string 
 	position string 
+}
+
+// Interfaces
+
+type Shape interface{
+	getPerimeter() uint
+}
+
+type Triangle struct{
+	a uint
+	b uint
+	c uint
+}
+
+func (t Triangle) getPerimeter() uint{
+	return t.a + t.b +t.c
+}
+
+func (s Square) getPerimeter() uint{
+	return s.a + s.b
+}
+
+// Error handling in functions
+
+func divide_real(a int, b int) (int, error){
+	if b == 0 {
+		return 0, errors.New("Division by 0")
+	}
+	return a/b, nil
 }
