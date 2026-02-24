@@ -157,4 +157,112 @@ func main(){
 	}
 	
 	sl2 := make([]int, 10, 20)//Made an int arr slice with size 10 and capacity 20
+
+	fmt.Println(sl2)
+
+	//Iterating over Slices
+	sl3 := []string{"hello", "world", "hi"}
+	for i, value := range sl3{
+		fmt.Println(i, value)
+	}
+
+	//If we pass a slice into a function unlike an array we are not using a copy and it actually mutates that value. This is because a slice has a pointer to the underlying array. 
+
+	test(sl3)
+
+	// Maps
+
+	// var syntax
+	var mp map[string]int = map[string]int{"a": 1}  
+	// or 
+	m := map[int]int{1:2, 2:3}
+	mp2 := map[string][]int{"a" : {1,2,3}}
+	delete(mp, "a")
+	//value, ok := mp["a"]
+
+	callFunc(doubleNumber)
+
+	// Or you can use anonymous functions
+
+	callFunc(func(x int) int{
+		return x*3
+	})
+
+	sum1 := sum_1([]int{1,2,3,4,5}...)
+	sum2 := sum_1(1,2,3,4,5)
+	fmt.Println(s)
+		
+	p1 := Person{"Adam", 20} //You can either put elements in the correct order of the fields or you can name the fields explicitly
+
+	// var syntax 
+	var p3 Person = Person{
+		"adam", 
+		20,
+	}
+	p2 := Person{
+		age : 20,
+		name : "Adam",
+	}
+	fmt.Println(p1)
+
 }
+
+// Srtucts 
+
+type Person struct {
+	name string 
+	age uint 
+}
+
+func test(arr []string){
+	arr[0] = "change this"
+}
+
+// Functions
+
+func add(num1 int, num2 int) int{ // a private function that takes in two ints, and returns an int
+	return num1 + num2
+}
+
+// You can return multiple things
+func divide(num1 int, num2 int) (float64, string){
+	if num2 == 0{
+		fmt.Println("Cannot divide by zero")
+		return -1.0, "err"
+	} 
+	return float64(num1)/float64(num2), "success"
+}
+
+func callFunc(callable func(int) int) int{
+	return callable(10)
+}
+
+func doubleNumber(num int) int{
+	return 2*num
+}
+
+func getFunc(str string) func(string) string{
+	return func(str2 string) string{
+		return str + str2
+	}
+}
+
+//Variatic Function: A function that takes in multipe arguments, This is read as a slice of ints
+func sum_1(nums ...int) int{
+	var sum int 
+	for _, val := range nums{
+		sum += val
+	}
+	return sum
+}
+
+func getName(p Person) string{
+	return p.name
+}
+
+// To create a function that works the same for every struct we create we can declare a method
+
+func (p Person) getName() string{
+	return p.name
+}
+// Now this function works across all person structs
