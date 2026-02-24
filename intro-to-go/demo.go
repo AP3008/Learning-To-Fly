@@ -198,12 +198,17 @@ func main(){
 	var p3 Person = Person{
 		"adam", 
 		20,
+		{
+			name : "basketball",
+			position: "D",
+		}
 	}
 	p2 := Person{
 		age : 20,
 		name : "Adam",
 	}
-	fmt.Println(p1)
+	fmt.Println(p1.sport.name)
+
 
 }
 
@@ -212,6 +217,7 @@ func main(){
 type Person struct {
 	name string 
 	age uint 
+	sport Sport //Creates a slice of a struct 
 }
 
 func test(arr []string){
@@ -266,3 +272,17 @@ func (p Person) getName() string{
 	return p.name
 }
 // Now this function works across all person structs
+
+// This does not actually change the name in the Person struct, because it creates a copy, so the change only exists within the scope of the function. 
+//To mutate the values of the struct you need to pass a reference to the struct. 
+func (p Person) setName(newName string){
+	p.name=newName
+	fmt.Println(p)
+}
+
+// Note: If I want to have public fields for a struct, I need make the var names have capital letters
+
+type Sport struct{
+	name string 
+	position string 
+}
