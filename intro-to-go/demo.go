@@ -230,8 +230,6 @@ func main(){
 
 	//r := recover()
 	//recover: can only be used inside of a defered statements.
-
-	
 }
 
 // Because they all belong to the same interface we can implement generic methods easier amongst them. 
@@ -351,3 +349,25 @@ func divide_real(a int, b int) (int, error){
 	}
 	return a/b, nil
 }
+
+// Generics
+
+func add_generic[T Number](x T, y T) T{
+	return x + y
+}
+
+func getValues[K comparable, V any](mp map[K]V) []V{ // note: comparable is an interface, values that adhere to comparable interface are like int, float64, etc. 
+	values := []V{}
+
+	for _, value := range mp{ // Iterating through the map _ = keys, value = values associate w/ key
+		values = append(values, value) 
+	}
+}
+
+// Generics for interfaces
+
+type Number interface{
+	int | float64 | uint
+}
+
+
