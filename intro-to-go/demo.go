@@ -1,9 +1,11 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"math"
-	"errors"
+	"sync"
+	"time"
 )
 
 func main(){
@@ -230,6 +232,108 @@ func main(){
 
 	//r := recover()
 	//recover: can only be used inside of a defered statements.
+
+	// Pointers 
+
+	number_1 := 0
+	pnt_number_1 := &number_1
+	*pnt_number_1 := 1
+	fmt.Println(*pnt_number_1)
+
+	book := Book{10, "Old"}
+	book.setTitle("New") // This is equal to (&book).setTitle
+	fmt.Println(b)
+
+	// Note: Cannot make a reference / pointer to a literal i.e NO (&1)
+
+	// Go routines
+	go run()
+	go run2()
+	go run3()
+	fmt.Println("Done")
+
+	// Storing values from go routines
+
+	ch := make(chan int)
+	go add(5, 10)
+	fmt.Println("Done")
+
+	x_num := <-ch // This is a blocking routine, so anything past this has to wait
+	fmt.Println(x)
+
+	ch2 := make(chan int)
+	go add(20,15,ch2)
+
+	select {
+	case x_1 := <- ch: // This is so you can handle it on any one that returns first
+		fmt.Println(x)
+	case y_1 := <- ch2:
+		fmt.Println(y_1)
+	}
+
+	wg := sync.WaitGroup()
+	wg.Add(100)
+
+	counter := Counter{}
+	for i := 0; i < 100; i++{
+		go count(&counter, &wg)
+	}
+	//time.Sleep(2 * time.Second)
+	wg.Done()
+}
+
+// Mutex
+
+// This is implemented so other routines 
+type Counter struct {
+	value int
+	lock sync.Mutex
+}
+
+func count(counter *Counter, wg sync.WaitGroup){
+	counter.lock.Lock()
+	defer counter.lock.Unlock()
+	counter.value++
+	fmt.Println(counter.value)
+	ch <- true
+}
+
+//Pointers w/ Functions & Structs
+
+type Book struct{
+	id int
+	title string
+}
+
+func (b *Book) setTitle(title string){
+	b.title = title //This is equal to normally writing (*b).title = title
+}
+
+func test_add(x int, y int, ch chan int) {
+	ch <- x + y
+}
+
+func pointer_test(pointerSlice *[]*int){
+	for _, value := range *pointerSlice{
+		if *value == 1 {
+			return *value
+		}
+	}
+}
+
+// Go routines
+
+func run(){
+	time.Sleep(2*time.Second)
+	fmt.Println("run")
+}
+func run()2{
+	time.Sleep(4*time.Second)
+	fmt.Println("run 2")
+}
+func run3(){
+	time.Sleep(6*time.Second)
+	fmt.Println("run 3")
 }
 
 // Because they all belong to the same interface we can implement generic methods easier amongst them. 
@@ -369,5 +473,9 @@ func getValues[K comparable, V any](mp map[K]V) []V{ // note: comparable is an i
 type Number interface{
 	int | float64 | uint
 }
+
+type GenericSlice[T any][]T // Created a GenericSlice that can act as my own type in GO 
+
+
 
 
