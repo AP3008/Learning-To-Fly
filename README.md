@@ -7,7 +7,6 @@ This is a repo of purely small projects that are just for my learning. This repo
 * [Django Blog Page](./Django-Blog/) | [Guide](https://tutorial.djangogirls.org/en/)
 * [Beginner Data Science Projects](./beginner-data-science) | [Guide](https://data-flair.training/blogs/advanced-python-project-detecting-fake-news/)
 * [Basic AI Agent](./ai-agent-tutorial) | [Guide](https://www.youtube.com/watch?v=bTMPwUgLZf0)
-* [Intro to GO](./intro-to-go) | [Guide](https://www.youtube.com/watch?v=V-lI7AmusGs)
 
 
 ## List of completed mini-projects
@@ -18,3 +17,4 @@ This is a repo of purely small projects that are just for my learning. This repo
 * [Rusty File Management](./rusty-file-managment) | No Guide
 * [Rusty Wallpaper Service](./wallpaper-service) | No Guide
 * [Rust Chat Room](./chat-app) | [Guide](https://www.youtube.com/watch?v=NS9Dh63i_Q4)
+* [Intro to GO](./intro-to-go) | [Guide](https://www.youtube.com/watch?v=V-lI7AmusGs)
