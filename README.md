@@ -7,6 +7,7 @@ This is a repo of purely small projects that are just for my learning. This repo
 * [Django Blog Page](./Django-Blog/) | [Guide](https://tutorial.djangogirls.org/en/)
 * [Beginner Data Science Projects](./beginner-data-science) | [Guide](https://data-flair.training/blogs/advanced-python-project-detecting-fake-news/)
 * [Basic AI Agent](./ai-agent-tutorial) | [Guide](https://www.youtube.com/watch?v=bTMPwUgLZf0)
+* [Intro to Svelte](./svelte-intro) | [Guide](https://www.youtube.com/watch?v=B2MhkPtBWs4&t=154s)
 * [Golang Chatapp](./go-chatapp) | [Guide](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#go)
 
 
