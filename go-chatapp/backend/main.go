@@ -39,7 +39,7 @@ func reader(conn *websocket.Conn){
 }
 
 // Define Websocket endpoint
-func serveWS(w http.ResponseWriter, r *http.Request){
+func serveWs(w http.ResponseWriter, r *http.Request){
 	fmt.Println(r.Host)
 
 	// Now upgrade the connection to websocket 
@@ -52,8 +52,9 @@ func serveWS(w http.ResponseWriter, r *http.Request){
 }
 
 func setupRoutes(){
+	fmt.Println("Chat App v0.01")
 	http.HandleFunc("/", testServer)
-	http.HandleFunc("/ws", serveWS)
+	http.HandleFunc("/ws", serveWs)
 }
 
 func testServer(w http.ResponseWriter, r *http.Request){
