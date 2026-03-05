@@ -50,8 +50,10 @@ func serveWS(w http.ResponseWriter, r *http.Request){
 	}
 	reader(ws)
 }
+
 func setupRoutes(){
 	http.HandleFunc("/", testServer)
+	http.HandleFunc("/ws", serveWS)
 }
 
 func testServer(w http.ResponseWriter, r *http.Request){
