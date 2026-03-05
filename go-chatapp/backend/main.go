@@ -6,13 +6,14 @@ import (
 )
 
 func main(){
-	mux := http.NewServeMux()
-	fmt.Println("Starting app @ lcoalhost:8080")
-	mux.HandleFunc("/", root)
-	http.ListenAndServe(":8080",mux) 
-
+	setupRoutes()
+	http.ListenAndServe(":8080", nil)
 }
 
-func root(w http.ResponseWriter, r *http.Request){
-	fmt.Fprint(w, "testing testing")
+func setupRoutes(){
+	http.HandleFunc("/", testServer)
+}
+
+func testServer(w http.ResponseWriter, r *http.Request){
+	fmt.Fprint(w, "Simple Server Setup")	
 }
