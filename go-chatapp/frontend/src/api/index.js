@@ -20,4 +20,4 @@ let sendMsg = msg => {
 	socket.sendMsg(msg);
 };
 
-export { connect, sendMsg }
+export { connect, sendMsg };
