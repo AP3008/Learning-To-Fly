@@ -17,7 +17,7 @@ let connect = () => {
 
 let sendMsg = msg => {
 	console.log("sending msg: ", msg);
-	socket.sendMsg(msg);
+	socket.send(msg);
 };
 
 export { connect, sendMsg };
