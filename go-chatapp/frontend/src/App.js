@@ -8,7 +8,6 @@ import ChatHistory from './components/ChatHistory';
 class App extends Component {
   constructor(props) {
     super(props);
-    connect();
 	this.state = {
 		chatHistory: []
 	}
@@ -33,7 +32,7 @@ class App extends Component {
 		return (
 		  <div className="App">
 			<Header />
-			<ChatHistory chatHistory={this.state.chatHistory}/>
+			<ChatHistory chatHistory={this.state.chatHistory} />
 			<button onClick={this.send}>Hit</button>
 		  </div>
 		);

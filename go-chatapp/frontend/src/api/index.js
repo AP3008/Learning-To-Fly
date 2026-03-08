@@ -6,7 +6,7 @@ let connect = cb => {
 	};
 	socket.onmessage = msg => {
 		console.log(msg);
-		cb(msg)
+		cb(msg);
 	};
 	socket.onclose = event => {
 		console.log("Socket closed connection: ", event);
