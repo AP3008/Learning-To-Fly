@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go-chatapp/websocket"
+	"go-chatapp/pkg/websocket"
 	"log"
 	"net/http"
 )
