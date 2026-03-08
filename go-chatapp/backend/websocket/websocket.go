@@ -7,7 +7,6 @@ import (
 	"net/http"
 
 	"github.com/gorilla/websocket"
-	"golang.org/x/text/message"
 )
 
 var upgrader = websocket.Upgrader{
