@@ -2,8 +2,6 @@
 package websocket
 
 import (
-	"fmt"
-	"io"
 	"log"
 	"net/http"
 
