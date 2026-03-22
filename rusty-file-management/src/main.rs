@@ -8,7 +8,7 @@ fn main() {
     let destination: &Path = Path::new("/Users/adamporbanderwalla/Desktop/Random Storage");
     let downloads: &Path = Path::new("/Users/adamporbanderwalla/Downloads");
 
-    let extensions:[&str; 16] = ["pptx", "webp", "c", "dSYM", "pdf", "mov","zip", "mp4", "m4a", "png", "jpg", "jpeg", "docx", "txt", "gif", "html"];  
+    let extensions:[&str; 17] = ["pptx", "webp", "c", "dSYM", "pdf", "mov","zip", "mp4", "m4a", "png", "jpg", "jpeg", "docx", "txt", "gif", "html", "md"];  
     
     let items_dir = match items_in_dir(area_to_clean){
         Ok(dir) => dir, 
