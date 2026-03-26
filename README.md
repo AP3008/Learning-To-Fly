@@ -1,6 +1,6 @@
 # What is Learning To Fly?
 
-This is a repo of purely small projects that are just for my learning. This repo will include nothing produced by generative AI, and is here purely as documentation. I aim to share some projects that I completed in my self learning process
+Documenting my learning through mini projects, that I don't want to push to it's own repository. This is just a nice way for me to keep everything organized and share it with other people. 
 
 ## What I am currently working on / planning
 
