@@ -7,7 +7,7 @@ Documenting my learning through mini projects, that I don't want to push to it's
 * [Django Blog Page](./Django-Blog/) | [Guide](https://tutorial.djangogirls.org/en/)
 * [Beginner Data Science Projects](./beginner-data-science) | [Guide](https://data-flair.training/blogs/advanced-python-project-detecting-fake-news/)
 * [Intro to Svelte](./svelte-intro) | [Guide](https://www.youtube.com/watch?v=B2MhkPtBWs4&t=154s)
-
+* [Intro to Gin](./gin-intro) | [Guide](https://semaphore.io/community/tutorials/building-go-web-applications-and-microservices-using-gin)
 
 ## List of completed mini-projects
 
