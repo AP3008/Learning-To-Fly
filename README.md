@@ -9,6 +9,8 @@ Documenting my learning through mini projects, that I don't want to push to it's
 * [Intro to Svelte](./svelte-intro) | [Guide](https://www.youtube.com/watch?v=B2MhkPtBWs4&t=154s)
 * [Intro to Gin](./gin-intro) | [Guide](https://semaphore.io/community/tutorials/building-go-web-applications-and-microservices-using-gin)
 * [Building Block Chain in Go](./go-blockchain) | [Guide](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#go)
+* [REST servers](./rest-server) | [Guide](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#go)
+* [URL Shortner](./url-shortner) | [Guide](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#go) 
 
 ## List of completed mini-projects
 
