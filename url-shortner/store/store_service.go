@@ -18,7 +18,7 @@ var (
 	ctx          = context.Background()
 )
 
-const cacheDuration = 6 * time.Hour
+const CacheDuration = 6 * time.Hour
 
 func InitializeStore() *StoreService {
 	redisClient := redis.NewClient(&redis.Options{
@@ -35,4 +35,21 @@ func InitializeStore() *StoreService {
 	fmt.Printf("\nRedis Started successfully: pong message = {%s}", pong)
 	storeService.redisClient = redisClient
 	return storeService
+}
+
+
+func SaveUrlMapping(shortUrl string, originalUrl string, userId string){
+	err := storeService.redisClient.Set(ctx, shortUrl, originalUrl, CacheDuration).Err()
+	if err != nil {
+		panic(fmt.Sprintf("Failed saving key url | Error: %v - shortUrl: %s - originalUrl: %s\n", err, shortUrl, originalUrl))
+	}
+}
+
+
+func RetrieveInitialUrl(shortUrl string) string {
+	result, err := storeService.redisClient.Get(ctx, shortUrl).Result()
+	if err != nil {
+		panic(fmt.Sprintf("Failed RetrieveInitialUrl url | Error: %v - shortUrl: %s\n", err, shortUrl))
+	}
+	return result 
 }
