@@ -24,7 +24,7 @@ func base58Encoded(bytes []byte) string {
 	return string(encoded)
 }
 
-func GenerateShirtLink(initialLink string, userId string) string {
+func GenerateShortLink(initialLink string, userId string) string {
 	urlHashBytes := sha256Of(initialLink + userId)
 	generatedNumber := new(big.Int).SetBytes(urlHashBytes).Uint64()
 	finalString := base58Encoded([]byte(fmt.Sprintf("%d", generatedNumber)))
