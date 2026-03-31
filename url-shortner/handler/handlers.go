@@ -30,7 +30,6 @@ func CreateShortUrl(c *gin.Context) {
 	})
 }
 
-//TODO: Debug the error w/ the redirect 
 func HandleShortUrlRedirect(c *gin.Context) {
 	shortUrl := c.Param("shortUrl")
 	initalUrl := store.RetrieveInitialUrl(shortUrl)
