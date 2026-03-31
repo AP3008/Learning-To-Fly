@@ -44,7 +44,6 @@ func SaveUrlMapping(shortUrl string, originalUrl string, userId string){
 	}
 }
 
-// TODO: correct the storage of the url 
 func RetrieveInitialUrl(shortUrl string) string {
 	result, err := storeService.redisClient.Get(ctx, shortUrl).Result()
 	if err != nil {
