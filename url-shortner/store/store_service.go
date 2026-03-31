@@ -5,8 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/go-redis/redis"
-	"github.com/redis/go-redis"
+	"github.com/redis/go-redis/v9"
 )
 
 type StoreService struct {
