@@ -10,7 +10,6 @@ Documenting my learning through mini projects, that I don't want to push to it's
 * [Intro to Gin](./gin-intro) | [Guide](https://semaphore.io/community/tutorials/building-go-web-applications-and-microservices-using-gin)
 * [Building Block Chain in Go](./go-blockchain) | [Guide](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#go)
 * [REST servers](./rest-server) | [Guide](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#go)
-* [URL Shortner](./url-shortner) | [Guide](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#go) 
 * [Rust Microservice](./rust-microservice) | [Guide](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#rust)
 
 ## List of completed mini-projects
@@ -25,3 +24,4 @@ Documenting my learning through mini projects, that I don't want to push to it's
 * [Intro to Golang](./intro-to-go) | [Guide](https://www.youtube.com/watch?v=V-lI7AmusGs)
 * [Intro to Golang net/http](./go-net-http) | [Guide](https://www.youtube.com/watch?v=eqvDSkuBihs)
 * [Golang Chatapp](./go-chatapp) | [Guide](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#go)
+* [URL Shortner](./url-shortner) | [Guide](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#go) 
