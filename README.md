@@ -12,6 +12,7 @@ Documenting my learning through mini projects, that I don't want to push to it's
 * [REST servers](./rest-server) | [Guide](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#go)
 * [Rust Microservice](./rust-microservice) | [Guide](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#rust)
 * [Rust through Linked List](./rust-ll) | [Guide](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#rust)
+* [Building Production API in golang](./golang-prod-api) | [Guide](https://www.youtube.com/watch?v=s3XItrqfccw)
 
 ## List of completed mini-projects
 
