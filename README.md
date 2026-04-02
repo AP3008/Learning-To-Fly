@@ -11,6 +11,7 @@ Documenting my learning through mini projects, that I don't want to push to it's
 * [Building Block Chain in Go](./go-blockchain) | [Guide](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#go)
 * [REST servers](./rest-server) | [Guide](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#go)
 * [Rust Microservice](./rust-microservice) | [Guide](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#rust)
+* [Rust through Linked List](./rust-ll) | [Guide](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#rust)
 
 ## List of completed mini-projects
 
