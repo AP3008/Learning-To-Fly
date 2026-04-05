@@ -17,7 +17,8 @@ def open_terminal():
     # Using AppleScript to open Ghostty
     subprocess.run([
         "osascript",
-        "-e",
+        "-n",
+        "-a", 
         'tell application "Ghostty" to activate'
         ])
     
