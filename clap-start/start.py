@@ -60,7 +60,7 @@ def main():
                 high_freq_ratio = high_freq_energy / total_energy
 
                 # Check if the sound is predominantly high-frequency
-                FREQ_RATIO = 0.6 
+                FREQ_RATIO = 0.5 
                 
                 if high_freq_ratio > FREQ_RATIO:
                     current_time = time.time()
