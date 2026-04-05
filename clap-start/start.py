@@ -16,10 +16,10 @@ MIN_DELAY = 0.2
 def open_terminal():
     # Using AppleScript to open Ghostty
     subprocess.run([
-        "osascript",
+        "open",
         "-n",
         "-a", 
-        'tell application "Ghostty" to activate'
+        "Ghostty"
         ])
     
 def main():
