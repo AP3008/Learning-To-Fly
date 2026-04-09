@@ -15,6 +15,7 @@ Documenting my learning through mini projects, that I don't want to push to it's
 * [Building Production API in golang](./golang-prod-api) | [Guide](https://www.youtube.com/watch?v=s3XItrqfccw)
 * [Building a Telegram Bot in Python](.telegram-bot) | [Guide](https://khashtamov.com/en/how-to-create-a-telegram-bot-using-python/)
 * [Snowflake Project](./snowflake-project) | [Guide](https://www.youtube.com/watch?v=7QisFjITGlI)
+* [Jupyter Notebook Extension](./jupyter-extension) | [Guide](https://medium.com/data-science/how-to-write-a-jupyter-notebook-extension-a63f9578a38c)
 
 ## List of completed mini-projects
 
