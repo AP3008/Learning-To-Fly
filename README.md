@@ -17,6 +17,7 @@ Documenting my learning through mini projects, that I don't want to push to it's
 * [Snowflake Project](./snowflake-project) | [Guide](https://www.youtube.com/watch?v=7QisFjITGlI)
 * [Jupyter Notebook Extension](./jupyter-extension) | [Guide](https://medium.com/data-science/how-to-write-a-jupyter-notebook-extension-a63f9578a38c)
 * [Write a shell in C](./shell) | [Guide](https://brennan.io/2015/01/16/write-a-shell-in-c/)
+* [Write your own Virtual Machine](./vm) | [Guide](https://www.jmeiners.com/lc3-vm/)
 
 ## List of completed mini-projects
 
