@@ -18,6 +18,7 @@ Documenting my learning through mini projects, that I don't want to push to it's
 * [Jupyter Notebook Extension](./jupyter-extension) | [Guide](https://medium.com/data-science/how-to-write-a-jupyter-notebook-extension-a63f9578a38c)
 * [Write a shell in C](./shell) | [Guide](https://brennan.io/2015/01/16/write-a-shell-in-c/)
 * [Write your own Virtual Machine](./vm) | [Guide](https://www.jmeiners.com/lc3-vm/)
+* [C++ for Beginner](./cpp-intro) | [Guide](https://www.youtube.com/watch?v=ZzaPdXTrSb8)
 
 ## List of completed mini-projects
 
