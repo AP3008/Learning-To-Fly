@@ -19,6 +19,7 @@ Documenting my learning through mini projects, that I don't want to push to it's
 * [Write a shell in C](./shell) | [Guide](https://brennan.io/2015/01/16/write-a-shell-in-c/)
 * [Write your own Virtual Machine](./vm) | [Guide](https://www.jmeiners.com/lc3-vm/)
 * [C++ for Beginner](./cpp-intro) | [Guide](https://www.youtube.com/watch?v=ZzaPdXTrSb8)
+* [Space Invaders from Scratch](./space-invaders) | [Guide](https://nicktasios.nl/posts/space-invaders-from-scratch-part-1.html)
 
 ## List of completed mini-projects
 
