@@ -20,6 +20,7 @@ Documenting my learning through mini projects, that I don't want to push to it's
 * [Write your own Virtual Machine](./vm) | [Guide](https://www.jmeiners.com/lc3-vm/)
 * [C++ for Beginner](./cpp-intro) | [Guide](https://www.youtube.com/watch?v=ZzaPdXTrSb8)
 * [Space Invaders from Scratch](./space-invaders) | [Guide](https://nicktasios.nl/posts/space-invaders-from-scratch-part-1.html)
+* [Code TCP/IP Stack](./tcp-ip) | [Guide](https://www.saminiir.com/lets-code-tcp-ip-stack-1-ethernet-arp/)
 
 ## List of completed mini-projects
 
