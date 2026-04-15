@@ -21,6 +21,7 @@ Documenting my learning through mini projects, that I don't want to push to it's
 * [C++ for Beginner](./cpp-intro) | [Guide](https://www.youtube.com/watch?v=ZzaPdXTrSb8)
 * [Space Invaders from Scratch](./space-invaders) | [Guide](https://nicktasios.nl/posts/space-invaders-from-scratch-part-1.html)
 * [Code TCP/IP Stack](./tcp-ip) | [Guide](https://www.saminiir.com/lets-code-tcp-ip-stack-1-ethernet-arp/)
+* [All the JavaScript needed for React](./js-react-learning) | [Guide](https://www.youtube.com/watch?v=m55PTVUrlnA)
 
 ## List of completed mini-projects
 
