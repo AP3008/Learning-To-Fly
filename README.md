@@ -22,6 +22,7 @@ Documenting my learning through mini projects, that I don't want to push to it's
 * [Space Invaders from Scratch](./space-invaders) | [Guide](https://nicktasios.nl/posts/space-invaders-from-scratch-part-1.html)
 * [Code TCP/IP Stack](./tcp-ip) | [Guide](https://www.saminiir.com/lets-code-tcp-ip-stack-1-ethernet-arp/)
 * [All the JavaScript needed for React](./js-react-learning) | [Guide](https://www.youtube.com/watch?v=m55PTVUrlnA)
+* [Todo App in React Native](./mobile-todo) | [Guide](https://egghead.io/courses/build-a-react-native-todo-application)
 
 ## List of completed mini-projects
 
