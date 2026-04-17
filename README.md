@@ -23,6 +23,7 @@ Documenting my learning through mini projects, that I don't want to push to it's
 * [Code TCP/IP Stack](./tcp-ip) | [Guide](https://www.saminiir.com/lets-code-tcp-ip-stack-1-ethernet-arp/)
 * [All the JavaScript needed for React](./js-react-learning) | [Guide](https://www.youtube.com/watch?v=m55PTVUrlnA)
 * [Todo App in React Native](./mobile-todo) | [Guide](https://egghead.io/courses/build-a-react-native-todo-application)
+* [Chat app with Sentiment Analysis](./sentiment-chat-app) | [Guide](https://codeburst.io/build-a-chat-app-with-sentiment-analysis-using-next-js-c43ebf3ea643)
 
 ## List of completed mini-projects
 
