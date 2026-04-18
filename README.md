@@ -24,6 +24,7 @@ Documenting my learning through mini projects, that I don't want to push to it's
 * [All the JavaScript needed for React](./js-react-learning) | [Guide](https://www.youtube.com/watch?v=m55PTVUrlnA)
 * [Todo App in React Native](./mobile-todo) | [Guide](https://egghead.io/courses/build-a-react-native-todo-application)
 * [Chat app with Sentiment Analysis](./sentiment-chat-app) | [Guide](https://codeburst.io/build-a-chat-app-with-sentiment-analysis-using-next-js-c43ebf3ea643)
+* [Real-time markdown editor](./markdown-editor) | [Guide](https://scotch.io/tutorials/building-a-real-time-markdown-viewer)
 
 ## List of completed mini-projects
 
