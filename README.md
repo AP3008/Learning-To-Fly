@@ -29,7 +29,7 @@ Documenting my learning through mini projects, that I don't want to push to it's
 
 ## List of completed mini-projects
 
-* [macos automation script](./macos-automation-script) | No Guide
+* [Macos automation script](./macos-automation-script) | No Guide
 * [React JS 19 Full Course 2025](./React-JS-19-Full-Course/) | [Guide](https://www.youtube.com/watch?v=dCLhUialKPQ&list=PL8IUzGAH46wnA8vi_zgZCxLyxE_ezclB8&index=5)
 * [Basic AI Agent](./ai-agent-tutorial) | [Guide](https://www.youtube.com/watch?v=bTMPwUgLZf0)
 * [Intro to Rust](./intro-rust) | [Guide](https://www.youtube.com/watch?v=T_KrYLW4jw8&list=PLzMcBGfZo4-nyLTlSRBvo0zjSnCnqjHYQ)
