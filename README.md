@@ -23,13 +23,13 @@ Documenting my learning through mini projects, that I don't want to push to it's
 * [All the JavaScript needed for React](./js-react-learning) | [Guide](https://www.youtube.com/watch?v=m55PTVUrlnA)
 * [Todo App in React Native](./mobile-todo) | [Guide](https://egghead.io/courses/build-a-react-native-todo-application)
 * [Chat app with Sentiment Analysis](./sentiment-chat-app) | [Guide](https://codeburst.io/build-a-chat-app-with-sentiment-analysis-using-next-js-c43ebf3ea643)
-* [Real-time markdown editor](./markdown-editor) | [Guide](https://scotch.io/tutorials/building-a-real-time-markdown-viewer)
-* [Build an Interpreter AI](./java-interpret) | [Guide](https://www.craftinginterpreters.com/)
 * [Intro to Astro Framework](./intro-astro) | [Guide](https://www.youtube.com/watch?v=eQXG75XirdE&t=260s)
+* [Build an Interpreter AI](./java-interpret) | [Guide](https://www.craftinginterpreters.com/)
+* [Real-time markdown editor](./markdown-editor) | [Guide](https://scotch.io/tutorials/building-a-real-time-markdown-viewer)
 
 ## List of completed mini-projects
 
-* [macos automation script](./macos-automation-script) | No Guide
+* [Macos automation script](./macos-automation-script) | No Guide
 * [React JS 19 Full Course 2025](./React-JS-19-Full-Course/) | [Guide](https://www.youtube.com/watch?v=dCLhUialKPQ&list=PL8IUzGAH46wnA8vi_zgZCxLyxE_ezclB8&index=5)
 * [Basic AI Agent](./ai-agent-tutorial) | [Guide](https://www.youtube.com/watch?v=bTMPwUgLZf0)
 * [Intro to Rust](./intro-rust) | [Guide](https://www.youtube.com/watch?v=T_KrYLW4jw8&list=PLzMcBGfZo4-nyLTlSRBvo0zjSnCnqjHYQ)
