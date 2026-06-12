@@ -13,7 +13,7 @@ class ResearchResponse(BaseModel):
     sources: list[str]
     tools_used: list[str]
 
-llm = ChatOpenAI(model="gpt-4o-mini")
+llm = ChatOpenAI(model="gpt-4o-mini") #This model has been deprecated 
 parse = PydanticOutputParser(pydantic_object=ResearchResponse)
 prompt = ChatPromptTemplate.from_messages(
     [
