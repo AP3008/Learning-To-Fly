@@ -3,7 +3,7 @@ import numpy as np
 import time
 import subprocess
 
-# Configs 
+# Configs and Constants 
 
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
