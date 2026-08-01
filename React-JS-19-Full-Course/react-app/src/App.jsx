@@ -88,7 +88,7 @@ const App = () => {
             </ul>
           )}
         </section>
-      </div>
+		</div>
     </main> 
   ) 
 } 
