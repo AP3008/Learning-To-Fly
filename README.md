@@ -40,5 +40,5 @@ Documenting my learning through mini projects, that I don't want to push to it's
 * [Intro to Golang net/http](./go-net-http) | [Guide](https://www.youtube.com/watch?v=eqvDSkuBihs)
 * [Golang Chatapp](./go-chatapp) | [Guide](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#go)
 * [URL Shortner](./url-shortner) | [Guide](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#go) 
-* [Clap to Start](./clap-start) | No Guide
 * [Intro to Gin](./gin-intro) | [Guide](https://semaphore.io/community/tutorials/building-go-web-applications-and-microservices-using-gin)
+* [Clap to Start](./clap-start) | No Guide
