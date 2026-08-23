@@ -23,9 +23,9 @@ Documenting my learning through mini projects, that I don't want to push to it's
 * [All the JavaScript needed for React](./js-react-learning) | [Guide](https://www.youtube.com/watch?v=m55PTVUrlnA)
 * [Todo App in React Native](./mobile-todo) | [Guide](https://egghead.io/courses/build-a-react-native-todo-application)
 * [Chat app with Sentiment Analysis](./sentiment-chat-app) | [Guide](https://codeburst.io/build-a-chat-app-with-sentiment-analysis-using-next-js-c43ebf3ea643)
-* [Intro to Astro Framework](./intro-astro) | [Guide](https://www.youtube.com/watch?v=eQXG75XirdE&t=260s)
 * [Build an Interpreter AI](./java-interpret) | [Guide](https://www.craftinginterpreters.com/)
 * [Real-time markdown editor](./markdown-editor) | [Guide](https://scotch.io/tutorials/building-a-real-time-markdown-viewer)
+* [Intro to Astro Framework](./intro-astro) | [Guide](https://www.youtube.com/watch?v=eQXG75XirdE&t=260s)
 
 ## List of completed mini-projects
 
