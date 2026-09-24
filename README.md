@@ -26,6 +26,7 @@ Documenting my learning through mini projects, that I don't want to push to it's
 * [Build an Interpreter AI](./java-interpret) | [Guide](https://www.craftinginterpreters.com/)
 * [Intro to Astro Framework](./intro-astro) | [Guide](https://www.youtube.com/watch?v=eQXG75XirdE&t=260s)
 * [Real-time markdown editor](./markdown-editor) | [Guide](https://scotch.io/tutorials/building-a-real-time-markdown-viewer)
+* [Intro to C++](./intro-cpp) | [Guide](https://www.youtube.com/watch?v=ZzaPdXTrSb8&t=2s)
 
 ## List of completed mini-projects
 
